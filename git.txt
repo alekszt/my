@@ -1,0 +1,22 @@
+git config --global user.name "Aleksey Kravchuk"
+git config --global user.email "alekseyzt@ukr.net"
+git config --list - вивести всі налаштування
+git help commit або git commit --help - вивести  manual по командИ
+git init - ініціалізувати git
+git status
+git add . - добавити всі файли
+git commit -m "firs commit" - коммит наших змін (створити "знімок" текущего стану)
+git remote add origin https://github.com/alekszt/git.git - підключитись до github
+git remote set-url origin https://github.com/alekszt/git.git - підключитись до github
+git push -u origin main - залить файли на github
+git clone https://github.com/jquery/jquery.git - клонировать с github
+git branch - сколько веток показать
+git log - показати commit
+git diff - показати зміни в файлі до commit
+git branch aleks - створити ветку aleks
+git checkout aleks - вибрати гілку aleks
+git merge aleks - обєднати з гілки aleks в основну main
+gitk - інтерфейс змін commit
+git branch -d aleks - видалити гілку aleks
+git branch -D aleks - видалити гілку aleks (коли все обэднане)
+

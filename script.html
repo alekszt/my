@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //comment
+      /*
+        comments
+      */
+      var stroka = "Testova stroka";
+      var chislo = 10;
+      var myArray = ["one", "two", "three"];
+      document.write("<h1>Hello \"world\"</h1>");
+      document.write(stroka + chislo);
+      document.write("<br>" + chislo * chislo);
+      document.write("<p>" + myArray[1] + "</p>");
+      var countArray = myArray.length;//кількіть елементів в масиві
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.push("foo");//добавити в кінець масиву
+      myArray.unshift("zero");//добавити в кінець масиву
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.shift();//видалити перший елемент масиву
+      myArray.pop();//видалити останій елемент масиву
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.splice(2,1);//видалити починаючи з 2-го елемента 1 елемент масиву
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.splice(1,0,"oneOne","oneTwo");//перед першим елементом масиву добавити два елемента.
+      //нуль - означає добавити
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.splice(2,1,"ElementZamina");//замінити 2-гий елемент
+      document.write("<p>CountMas = " + myArray.length + "</p>");
+      document.write("<p>ElementMass = " + myArray + "</p>");
+      myArray.reverse();
+      document.write("<p>Перевернутий масив = " + myArray + "</p>");
+      myArray.sort();
+      document.write("<p>Відсортований масив = " + myArray + "</p>");
+
+    </script>
+
+  </body>
+</html>
