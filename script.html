@@ -42,6 +42,13 @@
       document.write("<p>Перевернутий масив = " + myArray + "</p>");
       myArray.sort();
       document.write("<p>Відсортований масив = " + myArray + "</p>");
+      var twoArray = myArray.concat(myArray);//обєднати масиви
+      document.write("<p>" + twoArray + "</p>");
+      var tempArray = twoArray.slice(1,4);//вийняти з масиву з 1-го включно по 3-й
+      document.write("<p>" + tempArray + "</p>")
+      
+
+
 
     </script>
 
