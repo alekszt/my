@@ -19,4 +19,4 @@ git merge aleks - обєднати з гілки aleks в основну main
 gitk - інтерфейс змін commit
 git branch -d aleks - видалити гілку aleks
 git branch -D aleks - видалити гілку aleks (коли все обэднане)
-
+git pull - скачати файли яких не має в репозитаріїї локальному
