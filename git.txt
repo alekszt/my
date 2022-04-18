@@ -8,6 +8,7 @@ git add . - добавити всі файли
 git commit -m "firs commit" - коммит наших змін (створити "знімок" текущего стану)
 git remote add origin https://github.com/alekszt/git.git - підключитись до github
 git remote set-url origin https://github.com/alekszt/git.git - підключитись до github
+git pull - скачати файли яких не має в репозитаріїї локальному
 git push -u origin main - залить файли на github
 git clone https://github.com/jquery/jquery.git - клонировать с github
 git branch - сколько веток показать
@@ -19,4 +20,3 @@ git merge aleks - обєднати з гілки aleks в основну main
 gitk - інтерфейс змін commit
 git branch -d aleks - видалити гілку aleks
 git branch -D aleks - видалити гілку aleks (коли все обэднане)
-git pull - скачати файли яких не має в репозитаріїї локальному
