@@ -9,6 +9,7 @@ git commit -m "firs commit" - коммит наших змін (створити
 git remote add origin https://github.com/alekszt/git.git - підключитись до github
 git remote set-url origin https://github.com/alekszt/git.git - підключитись до github
 git push -u origin main - залить файли на github
+git pull - загрузити нове
 git clone https://github.com/jquery/jquery.git - клонировать с github
 git branch - сколько веток показать
 git log - показати commit
@@ -19,4 +20,3 @@ git merge aleks - обєднати з гілки aleks в основну main
 gitk - інтерфейс змін commit
 git branch -d aleks - видалити гілку aleks
 git branch -D aleks - видалити гілку aleks (коли все обэднане)
-
