@@ -5,6 +5,7 @@ git help commit або git commit --help - вивести  manual по кома�
 git init - ініціалізувати git
 git status
 git add . - добавити всі файли
+git add -A - добавити всі файли
 git commit -m "firs commit" - коммит наших змін (створити "знімок" текущего стану)
 git remote add origin https://github.com/alekszt/git.git - підключитись до github
 git remote set-url origin https://github.com/alekszt/git.git - підключитись до github
