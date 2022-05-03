@@ -6,7 +6,7 @@
   </head>
   <body>
     <script type="text/javascript">
-      var name = "Кравчук Олексій Миколайович";
+      var name = "tRaКравчук_YОлексій ZМиколайович";
       var l = name.length;//довжина обєкта
       document.write(l + "<br>");
 
@@ -17,6 +17,39 @@
 
       document.write(myString.indexOf("elit") + "<br>");//Пошук в рядку першого елемента по слову. -1 нічого не знайшов
       document.write(myString.lastIndexOf("elit") + "<br>");//Пошук в рядку останього елемента по слову. -1 нічого не знайшов
+
+      var mySite = "https://aleks.zt.ua";
+      var myDomen = mySite.slice(8);//вирізати з рядка починаючи з 8-го символа
+      var myRoot = mySite.slice(8,13)//вирізати з рядка починаючи з 8-го по 13 символ
+
+      document.write(myDomen + "<br>");
+      document.write(mySite + "<br>");
+      document.write(myRoot + "<br>");
+
+      var myChar = mySite.charAt(15);//який символ є 15-м
+      document.write(myChar + "<br>");
+
+      var myChar = mySite.charCodeAt(15);//код 15-го символа (наприклад введення тільки українською)
+      document.write(myChar + "<br>");
+
+      var ukrLetters = "аяАЯ";
+      document.write(ukrLetters.charCodeAt(0) + "<br>");
+      document.write(ukrLetters.charCodeAt(1) + "<br>");
+      document.write(ukrLetters.charCodeAt(2) + "<br>");
+      document.write(ukrLetters.charCodeAt(3) + "<br>");
+      //1040-1103
+      for (var i = 0; i < name.length; i++) {
+        if ((name.charCodeAt(i) < 1040 || name.charCodeAt(i) > 1103) && name.charCodeAt(i) != 1110 && name.charCodeAt(i) != 32) {
+          document.write("найшли не український символ " + name.charAt(i) + " " + name.charCodeAt(i) + "<br>");
+        }
+      }
+
+
+
+      document.write( + "<br>");
+      document.write( + "<br>");
+
+
 
     </script>
 
