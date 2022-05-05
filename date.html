@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let myDate = new Date();
+
+      let year = myDate.getFullYear();
+      document.write(year + "<br>");
+
+      let month = myDate.getMonth() + 1;
+      document.write(month + "<br>");
+
+      let day = myDate.getDay();
+      document.write(day + "<br>");
+
+      let date = myDate.getDate();
+      document.write(date + "<br>");
+
+      let time = myDate.getHours()
+      document.write(time + "<br>");
+
+      let minute= myDate.getMinutes();
+      document.write(minute + "<br>");
+
+      let sec= myDate.getSeconds();
+      document.write(sec + "<br>");
+
+      let myTime = new Date();
+      document.write(myTime.getTime() + "<br>");//01.01.1970
+
+      let from1970 = myTime.getTime() / 1000;//пройшо секунд 3  01.01.1970
+      document.write(from1970 + "<br>");
+
+      let minute1970 = myTime.getTime() / (1000 * 60);
+      document.write(minute1970 + "<br>");
+
+      let hours1970 = myTime.getTime() / (1000 * 60 * 60);
+      document.write(hours1970 + "<br>");
+
+      let day1970 = myTime.getTime() / (1000 * 60 * 60 * 24);
+      document.write(day1970 + "<br>");
+
+      let year1970 = myTime.getTime() / (1000 * 60 * 60 * 24 * 365);
+      document.write(year1970 + "<br>");
+
+
+
+
+    </script>
+
+  </body>
+</html>
