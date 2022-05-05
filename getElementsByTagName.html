@@ -16,7 +16,12 @@
     <script type="text/javascript">
       var allP = document.getElementsByTagName('p');
       alert(allP.length);
-
+      alert(allP.item(0));
+      allP[0].innerHTML= "<p>new Stroka</p>";
+      allP[3].innerText = "<p>new Stroka</p>";
+      let uri = document.documentURI;
+      document.write(uri);
+      
 
     </script>
 

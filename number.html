@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let myNumber = 17051985;
+      let myString = "Кравчук Олексій Миколайович";
+      (isNaN(myString)) ? document.write("не число" + "<br>") : document.write("число" + "<br>");//isNaN перевіряє чи не число
+      (isNaN(myNumber)) ? document.write("не число" + "<br>") : document.write("число" + "<br>");//isNaN перевіряє чи не число
+
+      let myNumSrting = "1705 year";
+      (isNaN(myNumSrting)) ? document.write("не число" + "<br>") : document.write("число" + "<br>");
+      let myNum = parseInt(myNumSrting);
+      (isNaN(myNum)) ? document.write("не число" + "<br>") : document.write("число" + "<br>");
+
+      let myFloatString = "17.05 gramm";
+      (isNaN(myFloatString)) ? document.write(myFloatString + " не число" + "<br>") : document.write("число" + "<br>");
+      let myFloat = parseFloat(myFloatString);
+      (isNaN(myFloat)) ? document.write("не число" + "<br>") : document.write(myFloat + " число" + "<br>");
+
+      let myNumb = "false";
+      let result = Number(myNumb);
+      document.write(result + "<br>");
+
+
+
+    </script>
+
+  </body>
+</html>
