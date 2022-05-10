@@ -45,7 +45,24 @@
       document.write(day1970 + "<br>");
 
       let year1970 = myTime.getTime() / (1000 * 60 * 60 * 24 * 365);
-      document.write(year1970 + "<br>");
+      document.write(Math.round(year1970) + "<br>");
+
+      let ny = new Date(2023,0,1,0,0,0);
+      let ny1970 = new Date();
+
+      document.write(ny + "<br>");
+
+      let fromNy = Math.round(ny.getTime()/(1000*60*60*24));
+      let fromNy1970 = Math.round(ny1970.getTime()/(1000*60*60*24));
+
+      document.write(fromNy + "<br>");
+      document.write(fromNy1970 + "<br>");
+      document.write(fromNy - fromNy1970 + "<br>");
+
+
+      let testDay = new Date(1000*60*60*24);
+      document.write(testDay + "<br>");
+
 
 
 
