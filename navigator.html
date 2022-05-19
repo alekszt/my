@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      for (let option in navigator) {
+        document.write(option + " : " + navigator[option] + "<br>");
+      }
+
+      document.write("------------------------------------------------------------<br>");
+
+      function userDetais() {
+        document.write("Name brauser - " + navigator.userAgent + "<br>");
+        document.write("Langueage brauser - " + navigator.language + "<br>");
+        document.write("Name OS - " + navigator.platform + "<br>");
+        document.write("Cookie  - " + navigator.cookieEnabled + "<br>");
+      }
+      userDetais();
+
+    </script>
+
+  </body>
+</html>

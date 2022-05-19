@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      let moto = {
+        color: "Blue",
+        horsePower: 130,
+        brand: "Porshe"
+      };
+
+      let temp = "color";
+      document.write(moto[temp] + "<br>");//достукатись до властивості обєкта через зміну
+
+      document.write("Brand - " + moto.brand + "<br>");
+      document.write(moto.color + "<br>");
+      document.write(moto.horsePower + "<br>");
+      document.write("----------------------------------------------------------<br>");
+
+
+
+      var summerTour = {
+        turkey : 2000,
+        spain : 3000,
+        egypet : 1000
+      };
+
+      summerTour.calc = function (peoles, days, county) {//створити метод для обєкта
+        //var result = peoles * days * summerTour[county];
+        var result = peoles * days * this[county];
+        return result;
+      }
+
+
+      document.write("All money tour: " + summerTour.calc(2,10,"spain") + " grn<br>");
+      document.write("All money tour " + summerTour["turkey"] + " : " + summerTour.calc(2,10,"turkey") + " grn<br>");
+
+
+
+      let car = new Object();
+      car.color = "White";
+      car.maxSpeed = 220;
+      car.brand = "Volvo";
+
+
+      document.write("Color car " + car.color + "<br>");
+      document.write(car.maxSpeed + "<br>");
+      document.write(car.brand + "<br>");
+
+    </script>
+
+  </body>
+</html>
